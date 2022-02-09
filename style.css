@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+    font-family: 'Open Sans',sans-serif;
+}
+.container{
+    width: 700px;
+    padding: 60px;
+    background: #3e3e3e;
+    border-radius: 15px;
+    display: flex;
+}
+.content{
+    flex:1;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.left h1{
+    font-size: 1.8em;
+    color: #eae41d;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 24px;
+}
+.left h1::before{
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 20px;
+    height: 26px;
+    background: #eae41d;
+}
+.details{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.details li{
+    font-size: 0.8em;
+    color: #666666;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.details li i{
+    color: #eae41d;
+    margin-right: 10px;
+}
+.input-field{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    border-bottom: 1px solid #666666;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    font-size: 0.8em;
+    color: #dddddd;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+input[name=message]{
+    margin-top: 40px;
+}
+.buttons{
+    margin-bottom: 0;
+    text-align: right;
+}
+.buttons button{
+    border: none;
+    background: none;
+    margin-left: 10px;
+    font-size: 1em;
+    color: #eae41d;
+    cursor: pointer;
+}
+.details li:hover{
+    color: #dddddd;
+}
+.input-field:hover,
+.input-field:focus{
+    border-bottom-color: #dddddd;
+}
+.buttons button:hover{
+    color: #767311;
+}
